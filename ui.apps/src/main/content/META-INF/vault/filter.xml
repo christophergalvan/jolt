@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/jolt/clientlibs"/>
+    <filter root="/apps/jolt/components"/>
+    <filter root="/apps/jolt/i18n"/>
+</workspaceFilter>

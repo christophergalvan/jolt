@@ -1,21 +1,33 @@
 <div
-  data-sly-use.teaser="com.adobe.cq.wcm.core.components.models.Teaser"
-  data-sly-use.titleTemplate="title.html"
+  data-sly-use.teaser="com.jolt.core.models.ContentBlockModel"
   data-sly-use.templates="core/wcm/components/commons/v1/templates.html"
 >
   <div class="cmp-resources__card">
-    <sly data-sly-call="${titleTemplate.title @ teaser=teaser}"></sly>
-    <p class="cmp-resources__card-text">
-      Body copy, suggested 100 characters, Lorem ipsum dolor sit amet,
-      consectetur adipiscing elit. Ut et.
+    <p
+      class="cmp-resources__card-text"
+      data-sly-test.button="${teaser.pretitle}"
+    >
+      ${teaser.pretitle}
     </p>
-    <div>
-      <a href="#" class="btn btn-primary fw-bold cmp-resources__card-btn"
-        >Try it free</a
+    <p
+      class="cmp-resources__card-heading"
+      data-sly-test.button="${teaser.title}"
+    >
+      ${teaser.title}
+    </p>
+    <p class="cmp-resources__card-text">
+      ${teaser.description || "Body copy, suggested 100 characters, Lorem ipsum
+      dolor sit amet, consectetur adipiscing elit. Ut et."}
+    </p>
+    <div data-sly-test.button="${teaser.buttonText}">
+      <a
+        href="${teaser.buttonLink || '#'}"
+        class="btn btn-primary fw-bold cmp-resources__card-btn"
+        >${teaser.buttonText}</a
       >
     </div>
     <div>
-      <a href="#" class="cmp-resources__card-link">Get details ></a>
+      <a href="#" class="cmp-resources__card-link">Learn more></a>
     </div>
   </div>
 </div>

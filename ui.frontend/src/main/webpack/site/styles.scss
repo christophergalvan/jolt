@@ -59,11 +59,13 @@ main {
 }
 
 .cmp-header__main-nav .cmp-header__icon-user {
+
   background-image: url("images/user.svg");
 }
 
 .cmp-header__main-nav .cmp-header__icon-world {
   background-image: url("images/world.svg");
+
 }
 
 .cmp-header__secondary-nav .navbar {
@@ -315,6 +317,15 @@ main {
 /*
   Carousel Component
 */
+.col-lg-4 {
+  border-left: 3px solid black;
+  height: 200px;
+  
+}
+
+.carousel-inner {
+  display: flex;
+}
 .cmp-carousel {
   margin: 40px 0;
 }
@@ -364,11 +375,13 @@ main {
 }
 
 .cmp-carousel .carousel-control-prev-icon {
+
   background-image: url("images/chevron-left.svg");
 }
 
 .cmp-carousel .carousel-control-next-icon {
   background-image: url("images/chevron-right.svg");
+
 }
 
 .cmp-carousel .carousel-inner {
@@ -593,6 +606,7 @@ main {
 
 .cmp-footer .cmp-footer__icon-in {
   background-image: url("images/instagram.svg");
+
 }
 
 .cmp-footer .cmp-footer__secondary-nav {

@@ -5,13 +5,13 @@
   <div class="cmp-resources__card">
     <p
       class="cmp-resources__card-text"
-      data-sly-test.button="${teaser.pretitle}"
+      data-sly-test.pretitle="${teaser.pretitle}"
     >
       ${teaser.pretitle}
     </p>
     <p
       class="cmp-resources__card-heading"
-      data-sly-test.button="${teaser.title}"
+      data-sly-test.title="${teaser.title}"
     >
       ${teaser.title}
     </p>
@@ -19,14 +19,14 @@
       ${teaser.description || "Body copy, suggested 100 characters, Lorem ipsum
       dolor sit amet, consectetur adipiscing elit. Ut et."}
     </p>
-    <div data-sly-test.button="${teaser.buttonText}">
+    <div data-sly-test.buttonText="${teaser.buttonText}">
       <a
         href="${teaser.buttonLink || '#'}"
         class="btn btn-primary fw-bold cmp-resources__card-btn"
         >${teaser.buttonText}</a
       >
     </div>
-    <div data-sly-test.button="${teaser.linkURL}">
+    <div data-sly-test.linkURL="${teaser.linkURL}">
       <a href="${teaser.linkURL || '#'}" class="cmp-resources__card-link"
         >Learn more></a
       >

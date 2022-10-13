@@ -315,6 +315,15 @@ main {
 /*
   Carousel Component
 */
+.col-lg-4 {
+  border-left: 3px solid black;
+  height: 200px;
+  
+}
+
+.carousel-inner {
+  display: flex;
+}
 .cmp-carousel {
   margin: 40px 0;
 }

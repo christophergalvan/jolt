@@ -41,5 +41,4 @@ public class ContentBlockModel implements Teaser {
     public String getDescription() {
         return teaser.getDescription();
     }
-
 }

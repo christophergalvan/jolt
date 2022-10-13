@@ -26,8 +26,11 @@
         >${teaser.buttonText}</a
       >
     </div>
-    <div>
-      <a href="#" class="cmp-resources__card-link">Learn more></a>
+    <h1>${teaser.linkURL}</h1>
+    <div data-sly-test.button="${teaser.link}">
+      <a href="${teaser.link || '#'}" class="cmp-resources__card-link"
+        >Learn more></a
+      >
     </div>
   </div>
 </div>

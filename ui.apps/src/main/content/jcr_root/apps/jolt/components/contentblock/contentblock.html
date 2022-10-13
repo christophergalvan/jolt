@@ -1,0 +1,36 @@
+<div
+  data-sly-use.teaser="com.jolt.core.models.ContentBlockModel"
+  data-sly-use.templates="core/wcm/components/commons/v1/templates.html"
+>
+  <div class="cmp-resources__card">
+    <p
+      class="cmp-resources__card-text"
+      data-sly-test.button="${teaser.pretitle}"
+    >
+      ${teaser.pretitle}
+    </p>
+    <p
+      class="cmp-resources__card-heading"
+      data-sly-test.button="${teaser.title}"
+    >
+      ${teaser.title}
+    </p>
+    <p class="cmp-resources__card-text">
+      ${teaser.description || "Body copy, suggested 100 characters, Lorem ipsum
+      dolor sit amet, consectetur adipiscing elit. Ut et."}
+    </p>
+    <div data-sly-test.button="${teaser.buttonText}">
+      <a
+        href="${teaser.buttonLink || '#'}"
+        class="btn btn-primary fw-bold cmp-resources__card-btn"
+        >${teaser.buttonText}</a
+      >
+    </div>
+    <h1>${teaser.linkURL}</h1>
+    <div data-sly-test.button="${teaser.link}">
+      <a href="${teaser.link || '#'}" class="cmp-resources__card-link"
+        >Learn more></a
+      >
+    </div>
+  </div>
+</div>

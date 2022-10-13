@@ -1,0 +1,94 @@
+.cmp-resources__card {
+    margin: 17px 26px;
+}
+
+.cmp-resources__card .cmp-resources__card-heading {
+    margin-bottom: 11px;
+    font-size: 20px;
+    line-height: 28px;
+    color: #1B1C1D;
+}
+
+.cmp-resources__card .cmp-resources__card-text {
+    margin-bottom: 25px;
+}
+
+.cmp-resources__card .cmp-resources__card-btn {
+    padding: 10px 24px;
+    margin-bottom: 28px;
+    border-radius: 48px;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.cmp-resources__card .cmp-resources__card-link {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+
+.cmp-models{
+    .content-block__container {
+        display: flex;
+
+        .cmp-resources__card {
+                margin: 40px 0;
+                -flex: 0 0 66.666667%;
+                flex: 0 0 66.666667%;
+                max-width: 66.666667%
+            }
+
+            .cmp-resources__card .cmp-resources__card-heading {
+                margin: 0 26px 37px;
+                font-size: 32px;
+                line-height: 40px;
+                color: #1B1C1D;
+            }
+
+            .cmp-resources__card .cmp-resources__card-text {
+                margin: 26px;
+            }
+
+            .cmp-resources__card .cmp-resources__card-btn {
+                padding: 10px 24px;
+                margin: 0 26px;
+                border-radius: 48px;
+            }
+
+            .cmp-resources__card .cmp-resources__card-link {
+                font-size: 14px;
+                line-height: 20px;
+            }
+    }
+
+}
+
+
+@media (min-width: 768px) {
+    .cmp-models {
+        margin: 74px 0;
+        .content-block__container{
+
+            .cmp-models__image {
+                padding-right: 50px;
+            }
+
+            .cmp-resources__card .cmp-resources__card-heading {
+                margin: 72px 0 48px;
+                font-size: 56px;
+                line-height: 64px;
+            }
+
+            .cmp-resources__card .cmp-resources__card-text {
+                margin: 0 0 48px;
+            }
+
+            .cmp-resources__card .cmp-resources__card-btn {
+                margin: 0;
+            }
+        }
+
+    }
+
+
+}

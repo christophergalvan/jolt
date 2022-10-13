@@ -5744,6 +5744,7 @@ textarea.form-control-lg {
   position: relative;
   width: 100%;
   overflow: hidden;
+  display: flex;
 }
 .carousel-inner::after {
   display: block;

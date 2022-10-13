@@ -5732,6 +5732,10 @@ textarea.form-control-lg {
   position: relative;
 }
 
+.carousel-inner {
+  display: flex;
+}
+
 .carousel.pointer-event {
   touch-action: pan-y;
 }
@@ -5740,6 +5744,7 @@ textarea.form-control-lg {
   position: relative;
   width: 100%;
   overflow: hidden;
+  display: flex;
 }
 .carousel-inner::after {
   display: block;

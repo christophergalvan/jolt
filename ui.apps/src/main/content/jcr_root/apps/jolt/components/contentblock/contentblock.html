@@ -1,7 +1,15 @@
 <div
   data-sly-use.teaser="com.jolt.core.models.ContentBlockModel"
   data-sly-use.templates="core/wcm/components/commons/v1/templates.html"
+  class="content-block__container"
 >
+  <div class="col-md-4" data-sly-test.imagePath="${teaser.imagePath}">
+    <img
+      src="${teaser.imagePath}"
+      alt="About Us"
+      class="d-none d-md-block img-fluid cmp-models__image"
+    />
+  </div>
   <div class="cmp-resources__card">
     <p
       class="cmp-resources__card-text"
@@ -16,8 +24,9 @@
       ${teaser.title}
     </p>
     <p class="cmp-resources__card-text">
-      ${teaser.description || "Body copy, suggested 100 characters, Lorem ipsum
-      dolor sit amet, consectetur adipiscing elit. Ut et."}
+      ${teaser.description @ context = 'html' || "Body copy, suggested 100
+      characters, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+      et."}
     </p>
     <div data-sly-test.buttonText="${teaser.buttonText}">
       <a

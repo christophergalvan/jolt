@@ -8,6 +8,7 @@ import org.apache.sling.models.annotations.Via;
 import org.apache.sling.models.annotations.injectorspecific.Self;
 import org.apache.sling.models.annotations.injectorspecific.ValueMapValue;
 import org.apache.sling.models.annotations.via.ResourceSuperType;
+import com.adobe.cq.wcm.core.components.commons.link.Link;
 
 @Model(adaptables = SlingHttpServletRequest.class, defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL, adapters = Teaser.class, resourceType = "jolt/components/contentBlock")
 public class ContentBlockModel implements Teaser {
@@ -40,5 +41,9 @@ public class ContentBlockModel implements Teaser {
 
     public String getDescription() {
         return teaser.getDescription();
+    }
+
+    public String getLinkURL() {
+        return teaser.getLink().getURL();
     }
 }

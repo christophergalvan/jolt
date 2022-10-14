@@ -12,7 +12,7 @@
   </div>
   <div class="cmp-resources__card">
     <p
-      class="cmp-resources__card-text"
+      class="cfw-bold cmp-catalog__item-subtitle"
       data-sly-test.pretitle="${teaser.pretitle}"
     >
       ${teaser.pretitle}
@@ -24,9 +24,7 @@
       ${teaser.title}
     </p>
     <p class="cmp-resources__card-text">
-      ${teaser.description @ context = 'html' || "Body copy, suggested 100
-      characters, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-      et."}
+      ${teaser.description @ context='html'}
     </p>
     <div data-sly-test.buttonText="${teaser.buttonText}">
       <a

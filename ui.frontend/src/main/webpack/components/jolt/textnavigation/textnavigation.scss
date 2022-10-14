@@ -1,0 +1,30 @@
+
+/*
+  Navigation Component
+*/
+#navigation a {
+  border-bottom: 1px solid #E6E7E8;
+}
+
+#navigation a {
+  padding: 22px 26px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #606162;
+}
+#navigation a
+.cmp-navigation a,
+.cmp-navigation a,
+.cmp-navigation a {
+  color: #1B1C1D;
+}
+
+@media (min-width: 768px) {
+ #navigation a {
+    padding-left: 24px;
+  }
+
+ #navigation a {
+    padding: 22px 26px;
+  }
+}

@@ -28,11 +28,14 @@
                                         sling:resourceType="granite/ui/components/coral/foundation/container"
                                         name="./socialMedia">
                                     <items jcr:primaryType="nt:unstructured">
-                                        <socialPath
+                                       <file
                                                 jcr:primaryType="nt:unstructured"
-                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                                                emptyText="Path"
-                                                name="./socialPath"/>
+                                                sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                                                class="cq-droptarget"
+                                                fileNameParameter="./fileName"
+                                                fileReferenceParameter="./fileReference"
+                                                mimeTypes="[image/gif,image/jpeg,image/png,image/tiff,image/svg+xml]"
+                                                name="./file"/>
                                         <socialUrl
                                                 jcr:primaryType="nt:unstructured"
                                                 sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
